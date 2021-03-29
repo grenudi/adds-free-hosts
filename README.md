@@ -22,3 +22,7 @@ sudo chmod u+xr /usr/bin/update-adds-free-hosts ;
 ```
 sudo update-adds-free-hosts
 ```
+## Customize 
+edit file ```/usr/bin/update-adds-free-hosts```  
+add or remove function call ```fetchHosts``` to suit your needs.  
+There is more hosts files on Steven's github https://github.com/StevenBlack/hosts
