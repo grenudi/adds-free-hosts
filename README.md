@@ -1,5 +1,6 @@
 ## adds-free-hosts
-adds free hosts file
+adds free hosts file.  
+The script just updates your /etc/hosts file with hosts file from this repository of StevenBlack https://github.com/StevenBlack/hosts
 
 ## Install
 
