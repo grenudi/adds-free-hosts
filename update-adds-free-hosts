@@ -1,9 +1,19 @@
 #!/bin/bash
-
 cd /tmp ;
-wget https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts ;
+tmphostsloc="/tmp/adds-free-hosts-tmp";
+
 sudo rm /etc/hosts ;
 sudo cp /etc/main_hosts /etc/hosts ;
-sudo cat /tmp/hosts >> /etc/hosts ;
+
+fetchHosts (){
+	wget $1 -O $tmphostsloc;
+	sudo cat $tmphostsloc >> /etc/hosts ;
+}
+
+fetchHosts https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts ;
+fetchHosts https://raw.githubusercontent.com/FadeMind/hosts.extras/master/add.2o7Net/hosts ;
+fetchHosts https://raw.githubusercontent.com/AdAway/adaway.github.io/master/hosts.txt ;
+fetchHosts https://raw.githubusercontent.com/shreyasminocha/shady-hosts/main/hosts ;
+
 sudo /etc/init.d/networking restart ;
 
