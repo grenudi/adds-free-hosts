@@ -1,9 +1,13 @@
 ## adds-free-hosts
 adds free hosts file.  
 The script just updates your /etc/hosts file with hosts file from this repository of StevenBlack https://github.com/StevenBlack/hosts
-
+  
+## Dependencies
+- wget
+- ~debian linux distro (only because of the last line in the script that flushes DNS cache)
+  
 ## Install
-
+  
 **BACKUP EXISTING /etc/hosts file FIRST**
 with:
 ```
