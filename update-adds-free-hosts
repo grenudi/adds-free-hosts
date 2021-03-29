@@ -7,7 +7,7 @@ cp /etc/main_hosts /etc/hosts ;
 
 fetchHosts (){
 	wget $1 -O $tmphostsloc;
-	sudo cat $tmphostsloc >> /etc/hosts ;
+	cat $tmphostsloc >> /etc/hosts ;
 }
 
 fetchHosts https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts ;
