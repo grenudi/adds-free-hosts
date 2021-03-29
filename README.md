@@ -9,6 +9,7 @@ with:
 ```
 sudo cp /etc/hosts /etc/main_hosts
 ```
+do not touch /etc/hosts from now on, use /etc/main_hosts  
 ```
 sudo wget -p /usr/bin/ https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts ;
 sudo chmod u+xr /usr/bin/adds-free-hosts ; 
